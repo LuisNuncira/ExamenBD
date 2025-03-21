@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Editar Persona</title>
-    <link rel="stylesheet" href="css/stylee.css"> <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/stylee.css"> 
 </head>
 <body>
     <div class="container">

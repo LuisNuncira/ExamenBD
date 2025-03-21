@@ -13,7 +13,7 @@ $total_personas = count($personas);
 <head>
     <meta charset="UTF-8">
     <title>Lista de Personas</title>
-    <link rel="stylesheet" href="css/styles.css"> <!-- Tu archivo CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css"> 
 </head>
 <body>
     <div class="container">
