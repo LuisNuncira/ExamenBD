@@ -34,22 +34,33 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <title>Editar Persona</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/stylee.css"> <!-- Tu archivo CSS personalizado -->
 </head>
 <body>
-    <h1>Editar Persona</h1>
-    <form method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($persona['nombre']) ?>" required>
-        <br>
-        <label for="correo">Correo:</label>
-        <input type="email" id="correo" name="correo" value="<?= htmlspecialchars($persona['email']) ?>" required>
-        <br>
-        <label for="edad">Edad:</label>
-        <input type="number" id="edad" name="edad" value="<?= htmlspecialchars($persona['edad']) ?>" required>
-        <br>
-        <button type="submit">Guardar Cambios</button>
-    </form>
-    <a href="index.php"><button>Cancelar</button></a>
+    <div class="container">
+        <header class="header">
+            <h1>Editar Persona</h1>
+            <a href="index.php" class="btn-back">Regresar</a>
+        </header>
+
+        <form method="POST" class="form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" value="<?= htmlspecialchars($persona['nombre']) ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" id="correo" name="correo" value="<?= htmlspecialchars($persona['email']) ?>" required>
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="number" id="edad" name="edad" value="<?= htmlspecialchars($persona['edad']) ?>" required>
+            </div>
+            <div class="form-actions">
+                <button type="submit" class="btn-submit">Guardar Cambios</button>
+                <a href="index.php" class="btn-cancel">Cancelar</a>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
