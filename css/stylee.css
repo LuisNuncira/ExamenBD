@@ -1,5 +1,4 @@
 
-/* Estilos para el formulario */
 .form {
     background-color: var(--white);
     padding: 20px;
@@ -32,7 +31,6 @@
     outline: none;
 }
 
-/* Botones del formulario */
 .form-actions {
     display: flex;
     gap: 10px;
@@ -63,14 +61,14 @@
     color: var(--white);
     text-decoration: none;
     text-align: center;
-    line-height: 38px; /* Para alinear el texto verticalmente */
+    line-height: 38px; 
 }
 
 .btn-cancel:hover {
-    background-color: #e53935; /* Rojo más oscuro */
+    background-color: #e53935;
 }
 
-/* Botón de regreso */
+
 .btn-back {
     display: inline-block;
     padding: 10px 20px;
@@ -82,5 +80,5 @@
 }
 
 .btn-back:hover {
-    background-color: #fb8c00; /* Naranja más oscuro */
+    background-color: #fb8c00;
 }
